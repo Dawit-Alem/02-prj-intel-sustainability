@@ -206,22 +206,21 @@ main {
   color: #102a43;
 }
 
-.timeline-card p {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  color: #334e68;
-  line-height: 1.75;
+.card-content p {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
-.timeline-card:hover p,
-.timeline-card:focus-within p {
+.timeline-card:hover .card-content p,
+.timeline-card:focus-within .card-content p {
   opacity: 1;
   max-height: 160px;
+}
+
+.card-overlay {
+  background: rgba(0, 20, 60, 0.9);
 }
 
 @media (max-width: 1000px) {
